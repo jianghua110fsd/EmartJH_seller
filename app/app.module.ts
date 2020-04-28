@@ -6,7 +6,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { CartService } from './cart.service';
-import { CartComponent } from './cart/cart.component';
 import { SellerTopComponent } from './seller-top/seller-top.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
@@ -20,7 +19,6 @@ import { LogoutComponent } from './logout/logout.component';
   declarations: [
     AppComponent,
     TopBarComponent,
-    CartComponent,
     SellerTopComponent,
     LoginComponent,
     SignupComponent,
@@ -36,7 +34,6 @@ import { LogoutComponent } from './logout/logout.component';
     RouterModule.forRoot([
       { path: '', pathMatch: 'full', redirectTo: '/login' },
       { path: 'login', component: LoginComponent },
-      { path: 'cart', component: CartComponent },
       { path: 'signup', component: SignupComponent },
       { path: 'seller-top', component: SellerTopComponent },
       { path: 'reports', component: ReportsComponent },

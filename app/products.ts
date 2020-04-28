@@ -1,32 +1,32 @@
 export const products = [
   {
     productName: 'Phone XL',
-    productNO: 'I00001',
-    category: 'C001',
-    subcategory: 'SC0011',
+    productNO: 'P00001',
+    category: 'Electronics',
+    subcategory: 'Phone',
     price: 3888,
     stockNumber: 88,
-    remarks:'EMS',
-    description: 'A large phone with one of the best screens'
+    remarks:'Apple',
+    description: 'A large phone'
   },
   {
-    productName: 'HUAWEI METE 30',
-    productNO: 'H00002',
-    category: 'Electronics',
-    subcategory: 'Phone',
-    price: 58888,
+    productName: '4MATIC',
+    productNO: 'A00002',
+    category: 'Automobile',
+    subcategory: 'Mercedes-Benz',
+    price: 588888,
     stockNumber: 99,
-    remarks:'EMS',
-    description: 'A large phone with one of the best camera and speed'
+    remarks:'DRP 37435',
+    description: 'A super car'
   },
   {
-    productName: 'OPPO 8X',
-    productNO: 'O00003',
-    category: 'Electronics',
-    subcategory: 'Phone',
-    price: 1888,
+    productName: 'Casio',
+    productNO: 'W00003',
+    category: 'Watch',
+    subcategory: 'Quartz watch',
+    price: 18888,
     stockNumber: 999,
-    remarks:'EMS',
-    description: 'A big memory phone with good camera'
+    remarks:'Swatch Group',
+    description: 'A good Watch'
   },
 ];
