@@ -1,0 +1,45 @@
+<app-top-bar></app-top-bar>
+<h1 style="background-color: aquamarine;">reports</h1>
+<table class="table table-condensed" border="1">
+  <thead>
+    <tr style="background-color: burlywood;">
+      <th>Buyer</th>
+      <th>item</th>
+      <th>Transaction ID</th>
+      <th>Number_of_items</th>
+      <th>Date_time</th>
+      <th>remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>momo</td>
+      <td>iPhone</td>
+      <td>Emart00000001</td>
+      <td>1</td>
+      <td>2020/04/18</td>
+      <td>cash</td>
+    </tr>
+    <tr>
+      <td>feifei</td>
+      <td>huawei P30</td>
+      <td>Emart00000002</td>
+      <td>1</td>
+      <td>2020/04/18</td>
+      <td>cash</td>
+    </tr> 
+    <tr>
+      <td>huahua</td>
+      <td>oppo</td>
+      <td>Emart00000003</td>
+      <td>1</td>
+      <td>2020/04/18</td>
+      <td>cash</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="form-group">
+	<input type="submit" class="btn btn-success pull-right" value="print"/>
+	<input type="submit" class="btn btn-info pull-left" (click)="goBack()"  id="back_btn" value="Back"/>
+</div>

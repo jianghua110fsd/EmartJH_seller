@@ -1,0 +1,43 @@
+<app-top-bar></app-top-bar>
+<p>item-maitenance works!</p>
+<div class="form row">
+<br/>
+				<div class="col-sm-6 col-md-6"  style="text-align: center;" *ngIf="product"> 
+					<div class="form-group">
+						<i class="fa fa-user fa-lg"></i>
+						<input class="form-control required" type="text" value="{{product.productNO}}" placeholder="Item ID" name="itemid" autofocus="autofocus"/>
+					</div>
+					<div class="form-group">
+						<i class="fa fa-user fa-lg"></i>
+						<input class="form-control required" type="text" value="{{product.category}}" placeholder="Category ID" name="category_id" autofocus="autofocus"/>
+					</div>
+					<div class="form-group">
+							<i class="fa fa-envelope fa-lg"></i>
+							<select class="form-control required" placeholder="Subcategory ID" name="subcategory_id">{{product.subcategory}}</select>
+					</div>
+					<div class="form-group">
+							<i class="fa fa-envelope fa-lg"></i>
+							<input class="form-control required" type="text" value="{{product.price}}" placeholder="Price" name="price"/>
+					</div>
+					<div class="form-group">
+							<i class="fa fa-envelope fa-lg"></i>
+							<input class="form-control" type="text" value="{{product.stockNumber}}" placeholder="Stock" name="stock"/>
+					</div>
+					<div class="form-group">
+							<i class="fa fa-envelope fa-lg"></i>
+							<input class="form-control required" type="text" value="{{product.remarks}}" placeholder="Remarks" name="remarks"/>
+					</div>
+					<div class="form-group">
+							<i class="fa fa-envelope fa-lg"></i>
+							<input class="form-control" type="text" placeholder="Item name" value="{{ product.productName }}" name="itemname"/>
+					</div>
+					<div class="form-group">
+							<i class="fa fa-envelope fa-lg"></i>
+							<input class="form-control" size="200" type="text" placeholder="Description" value="{{ product.description }}"  name="description"/>
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn btn-success pull-right" value="maitenace"/>
+						<input type="submit" class="btn btn-info pull-left" (click)="goBack()"  id="back_btn" value="Back"/>
+					</div>
+				</div>
+		</div>

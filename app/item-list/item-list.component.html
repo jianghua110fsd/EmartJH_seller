@@ -1,0 +1,35 @@
+<app-top-bar></app-top-bar>
+<p>products</p>
+<div class="form-group">
+<h1 style="background-color: aquamarine;">item list
+</h1>
+<div class="form-group">
+    <a [routerLink]="['/item-maitenance']" routerLinkActive="router-link-active"  class="button fancy-button">Insert</a>
+    <input type="submit" class="btn btn-info pull-left" (click)="goBack()"  id="back_btn" value="Back"/>
+</div>
+<table class="table table-condensed" border="1">
+    <tr style="background-color: burlywood;" >
+      <th>producName</th>
+      <th>productNO</th>
+      <th>category</th>
+      <th>subcategory</th>
+      <th>price</th>
+      <th>stock</th>
+      <th>remarks</th>
+      <th>description</th>
+      <th>delete</th>
+    </tr>
+  <tbody *ngFor="let product of products; index as productId">
+    <tr >
+      <td><a [routerLink]="['/item-maitenance', productId]" routerLinkActive="router-link-active"  class="button fancy-button" >{{ product.productName }}</a></td>
+      <td>{{ product.category}}</td>
+      <td>{{ product.category }}</td>
+      <td>{{ product.subcategory }}</td>
+      <td>{{ product.price }}</td>
+      <td>{{ product.stockNumber }}</td>
+      <td>{{ product.remarks }}</td>
+      <td>{{ product.description }}</td>
+      <td><input type="submit" class="btn btn-success pull-right" value="delete"/></td>
+    </tr>
+  </tbody>
+</table>

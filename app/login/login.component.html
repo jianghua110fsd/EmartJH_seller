@@ -1,0 +1,26 @@
+<div class="modal-dialog" style="margin-top: 10%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-center" id="myModalLabel">Emat-login</h4>
+            </div>
+            <div class="modal-body" id = "model-body">
+                <div class="form-group">
+ 
+                    <input type="text" class="form-control"placeholder="User id" autocomplete="off">
+                </div>
+                <div class="form-group">
+ 
+                    <input type="password" class="form-control" placeholder="password" autocomplete="off">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="form-group">
+                    <a [routerLink]="['/seller-top']" routerLinkActive="router-link-active" class="button fancy-button">Login</a>
+                </div>
+                <div class="form-group">
+                    <a [routerLink]="['/signup']" routerLinkActive="router-link-active" class="button fancy-button">Sign up</a>
+                </div>
+ 
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
